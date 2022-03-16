@@ -8,16 +8,19 @@ window.addEventListener('load', function () {
 var btn = $('#button');
 var navbar =$('#navbar')
 var image = $('.navbar .navbar-brand img');
+let tel = $('#navbar .telphone')
 // var link = $('.navbar .nav-item .nav-link');
 $(window).scroll(function () {
   if ($(window).scrollTop() > 100) {
     btn.addClass('show');
     image.addClass('resize');
     navbar.addClass('change');
+    tel.css('display' , 'none');
   } else {
     btn.removeClass('show');
     image.removeClass('resize');
     navbar.removeClass('change');
+    tel.css('display' , 'block');
   }
 });
 btn.on('click', function (e) {

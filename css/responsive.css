@@ -29,7 +29,7 @@
     width: 100%;
     left: 0;
     right: 0;
-    top: 19%;
+    top: 12%;
 
   }
   #navbar.change {
@@ -46,6 +46,10 @@
       width: 70px;
       height: 100px;
   }
+  #navbar .nav-item .drop-menu {
+      z-index: 100;
+      width: 200px;
+  }
   .telphone {
     right: 3%;
     top: -1px;
@@ -57,6 +61,9 @@
     font-size: 17px; 
   }
   /* start navbar */
+  .header{
+      padding: 178px 0 50px 0;
+  }
   .header .social-line{
       flex-direction: row;
       justify-content: space-between;
@@ -67,6 +74,7 @@
       align-items: start;
       height: 60px;
       padding: 2% 1%;
+      border-radius: 5px;
   }
   .header .social-line li{
       margin: 0;
@@ -149,7 +157,7 @@
         width: 98%;
         left: 0;
         right: 0;
-        top: 19%;
+        top: 5%;
     
       }
       #navbar.change {
@@ -168,10 +176,13 @@
       }
       .telphone {
         right: 0%;
-        top: -56px;
+        top: -17px;
+    }
+    .header{
+        padding: 148px 0 50px 0;
     }
     .header .social-line li{
-        margin-bottom: 10%;
+        margin-bottom: 30%;
     }
     .header .heading .button{
         width: 85%;
@@ -189,13 +200,16 @@
     .what-do img{
         height: 60px;
     }
+    .header .social-line{
+        width: 52%;
+    }
 }
 @media (min-width: 1023.98px) and (max-width: 1200px){
     #navbar {
         width: 98%;
         left: 0;
         right: 0;
-        top: 19%;
+        top: 5%;
     
       }
       #navbar.change {
@@ -210,16 +224,25 @@
     }
     .telphone {
         right: 9%;
-        top: -56px;
+        top: -15px;
     }
     .our-client .mySwiper1 img{
         width: 150px;
         height: 90px;
+    }
+    .header{
+        padding: 148px 0 50px 0;
     }
     .header-head h2{
         font-size: 40px;
     }
     .what-do img{
         height: 60px;
+    }
+    .why-us .content{
+        height: 404px;
+    }
+    .header .social-line li{
+        margin-bottom: 80%;
     }
 }

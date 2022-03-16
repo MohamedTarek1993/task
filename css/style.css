@@ -64,6 +64,11 @@ ul {
   font-family: "Lato", Sans-serif;
   font-size: 17px;
   font-weight: 600;
+  color: var(--color-secound) !important;
+}
+.form-select option{
+  color: var(--color-secound) !important;
+
 }
 .form-control:focus {
   color: var(--color-text);
@@ -380,18 +385,20 @@ input::-webkit-inner-spin-button {
 #navbar {
   background-color: transparent;
   position: absolute;
-  top: 10%;
+  top: 3%;
   right: 80px;
   left: 80px;
   width: 100%;
   z-index: 100;
   transition: background-color 1s ease !important;
-
+}
+.navbar-brand{
+  padding-left: 3%;
 }
 #navbar.change{
   background-color: rgba(46,46,46,.8) !important;
   position: fixed;
-    width: 1263px;
+    width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
     top: 0px;
@@ -460,7 +467,7 @@ input::-webkit-inner-spin-button {
 .telphone {
   position: absolute;
   right: 17%;
-  top: -30px;
+  top: -10px;
 }
 .telphone a {
   color: var(--color-primary);
@@ -495,15 +502,38 @@ input::-webkit-inner-spin-button {
 }
 .header .social-line {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  background: #000;
+    border-radius: 40px;
+    padding: 6% 1%;
+    z-index: 999;
 }
 .header .social-line li {
   width: 25px;
   height: 25px;
   margin-bottom: 35%;
   transition: 0.25s all ease-in;
+  animation: move-on 1s linear ;
+}
+@keyframes move-on {
+  0%{
+    transform: translateX(-120px);
+  }
+  25%{
+    transform: translateX(-80px);
+  }
+  50%{
+    transform: translateX(-40px);
+  }
+  85%{
+    transform: translateX(-10px);
+  }
+  100%{
+    transform: translateX(0ox);
+  }
+  
 }
 .header .social-line li i {
   color: white;
@@ -911,19 +941,29 @@ footer .location {
 }
 footer .social-footer {
   display: flex;
-  justify-content: start;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
 }
 footer .social-footer .box {
-  padding: 20px 0;
+  padding: 12px;
   transition: 0.3s all ease;
+  display: flex;
+  justify-content:center;
+  align-items: baseline;
+  
+
+  
 }
 footer .social-footer .box i {
   color: var(--color-primary);
   border-radius: 50%;
-  border: 1px solid var(--color-white);
-  padding: 1%;
+  padding: 1% 2%;
   transition: 0.3s all ease;
+  
 }
 footer .social-footer .box:hover i,
 footer .social-footer .box:hover a {
