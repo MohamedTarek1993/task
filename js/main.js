@@ -33,5 +33,30 @@ $(document).ready($(function () {
   });
 }));
 // animated hamburger icon
+//mixitops
+$(document).ready(function () {
+  let mixer = mixitup('.box-list');
+});
+//mixitops
+//counter
+const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        counter.innerText = "0";
+
+        const updateCounter = () => {
+            const target = counter.getAttribute('data-target');
+            const x = +counter.innerText;
+            const increment = target / 200;
+            if (x < target) {
+                counter.innerText = `${Math.ceil(x + increment)}`;
+                setTimeout(updateCounter, 1)
+            } else {
+                counter.innerText = target
+            }
+        }
+        updateCounter();
+    });
+    //counter
+
 
 

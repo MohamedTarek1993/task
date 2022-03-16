@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- main css -->
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- responsive css -->
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,14 +29,14 @@
 
 <body>
     <!---------------------- start loader -------------------------------------------->
-  <div id="preloader"></div>
-  <!---------------------- finish loader -------------------------------------------->
-  <!---------------------- start scroll-up -------------------------------------------->
-  <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
-  <!---------------------- finish scroll-up -------------------------------------------->
-  <!---------------------- finish wats-------------------------------------------->
-  <a class="float" href="#" target="_blank"> <i class="bi bi-whatsapp my-float"></i> </a>
-  <!---------------------- finish wats -------------------------------------------->
+    <div id="preloader"></div>
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+    <!---------------------- finish wats-------------------------------------------->
+    <a class="float" href="#" target="_blank"> <i class="bi bi-whatsapp my-float"></i> </a>
+    <!---------------------- finish wats -------------------------------------------->
     <!-- start navbar-->
     <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="navbar-brand">
@@ -47,11 +51,11 @@
                 <li id="item" class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
-                <li class="nav-item" onmouseover="showDrop(id)">
+                <li class="nav-item" onmouseenter="showDrop(1)" onmouseleave="hideDrop(1)">
                     <a id="about" class="nav-link" href="#">what we do
                         <span><i class="bi bi-caret-down-fill"></i></span>
                     </a>
-                    <ul class="drop-menu" id="1">
+                    <ul class="drop-menu" id="dropMenu1">
                         <li>
                             <a class="head-light" href="#">Social Media Management</a>
                         </li>
@@ -69,8 +73,23 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#awards">solution</a>
+                <li class="nav-item"  onmouseenter="showDrop(2)" onmouseleave="hideDrop(2)">
+                    <a class="nav-link" href="#awards">solution
+                        <span><i class="bi bi-caret-down-fill"></i></span>
+                    </a>
+                    <ul class="drop-menu" id="dropMenu2">
+                        <li>
+                            <a class="head-light" href="#">Social Media Management</a>
+                        </li>
+                        <li>
+                            <a class="head-light" href="#">WhatsApp Business Solutions</a>
+                        </li>
+                        <li>
+                            <a class="head-light" href="#">Mobile App Analytics</a>
+                        </li>
+                       
+                       
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#uses-case">uses case </a>
@@ -99,7 +118,7 @@
     <!-- start header-->
     <section class="header">
         <div class="over-lay"></div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-1 col-md-3 col-12">
                     <ul class="social-line">
@@ -665,6 +684,7 @@
 <!-- mixtup -->
 <!-- swiper -->
 <script src="js/swiper-demos.js"></script>
+<!-- swiper testionlis -->
 <script>
     var swiper = new Swiper(".mySwiper", {
         loop: true,
@@ -677,6 +697,7 @@
             disableOnInteraction: false,
         },
     });
+    //swiper brand
     var swiper = new Swiper(".mySwiper1", {
         slidesPerView: 5,
         spaceBetween: 10,
@@ -694,53 +715,35 @@
             prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-            640: {
-                slidesPerView: 2,
+            340: {
+                slidesPerView: 1,
                 spaceBetween: 20,
             },
             768: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+                slidesPerView: 3,
+                spaceBetween: 30,
             },
             1024: {
                 slidesPerView: 5,
-                spaceBetween: 50,
+                spaceBetween: 10,
             },
         },
     });
 </script>
 <!-- swiper -->
 <script>
-    $(document).ready(function () {
-        let mixer = mixitup('.box-list');
-    })
+    
 </script>
 <script>
-    const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-        counter.innerText = "0";
-
-        const updateCounter = () => {
-            const target = counter.getAttribute('data-target');
-            const x = +counter.innerText;
-            const increment = target / 200;
-            if (x < target) {
-                counter.innerText = `${Math.ceil(x + increment)}`;
-                setTimeout(updateCounter, 1)
-            } else {
-                counter.innerText = target
-            }
+    function showDrop(id) {
+            $(`#dropMenu${id}`).css({"display": "flex"})
+              
         }
-        updateCounter();
-    })
-</script>
-<script>
-    function showDrop(id){
-        console.log('ok')
-        let x = id.value
-        console.log(x) 
-        // document.getElementsByid('.drop-menu').style.display = "flex";
-    }
+        function hideDrop(id) {
+            $(`#dropMenu${id}`).css("display", "none");
+        }
+  
+  
 </script>
 </head>
 

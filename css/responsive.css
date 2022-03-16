@@ -1,0 +1,225 @@
+/* ---------------------------------------------------------media query------------------------------------------- */
+/* Extra small devices (phones, 767px and down) */
+@media only screen and (max-width: 767.98px) {
+  .header-head h2 {
+    font-size: 26px !important;
+  }
+  .header-head img {
+    width: 99px !important;
+    height: 41px !important;
+  }
+  .header .heading .button .btn {
+      width: 30%;
+  }
+  .prime-button ,.second-button {
+    padding: 11px 0px 9px 2px;
+    font-size: 14px;
+  }
+  .head-categ{
+      font-size: 16px;
+  }
+  .head-small{
+      font-size: 10px;
+  }
+  .head-light{
+      font-size: 10px;
+  }
+  /* start navbar */
+  #navbar {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 19%;
+
+  }
+  #navbar.change {
+    width: 100%;
+  }
+  .navbar-nav{
+      align-items: center;
+      background: #000;
+  }
+  .navbar-brand{
+      padding-left: 3%;
+  }
+  #navbar .navbar-brand img{
+      width: 70px;
+      height: 100px;
+  }
+  .telphone {
+    right: 3%;
+    top: -1px;
+  }
+  .telphone a{
+      font-size: 18px;
+  }
+  .telphone i{
+    font-size: 17px; 
+  }
+  /* start navbar */
+  .header .social-line{
+      flex-direction: row;
+      justify-content: space-between;
+      top: 0;
+      position: absolute;
+      width: 94%;
+      background-color: #000;
+      align-items: start;
+      height: 60px;
+      padding: 2% 1%;
+  }
+  .header .social-line li{
+      margin: 0;
+  }
+  .header .social-line li i{
+      font-size: 20px;
+  }
+  /* start header */
+  .header .heading h1{
+    font-size: 19px;
+  }
+    .header .heading p{
+        font-size: 14px;
+  }
+  .header .counter-rang{
+      margin-top: 5%;
+  }
+  .header .counter-rang .counter{
+      font-size: 28px;
+  }
+  /* finish header */
+  /* start about-us */
+
+  .about-us .header-head h2{
+    font-size: 33px !important;
+  }
+  .about-us h2{
+    font-size: 24px;
+   text-align: center; 
+  }
+  /* finish about us */
+  /* finish our client */
+
+  .our-client h2{
+    font-size: 27px;
+  }
+  /* finish our client */
+
+  /* start why-us */
+  .why-us .line p{
+    font-size: 11px; 
+  }
+  /* finish why-us */
+  /* start what do */
+  .what-do h6{
+      font-size: 18px;
+  }
+  .swiper-slide .content quete{
+      font-size: 14px;
+  }
+  .swiper-slide .content h2{
+    font-size: 29px;
+  }
+  .swiper-slide .content p{
+      font-size: 17px;
+  }
+  .contact-us h2{
+    font-size: 29px;
+  }
+  .social-icons li {
+      border: none;
+  }
+  footer .social-footer .box{
+      padding: 5px 0;
+  }
+  footer .parnter{
+      flex-direction: column;
+  }
+  .lower-footer .right-side{
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-end;
+      width: 60%;
+  }
+  /* finish what do */
+
+}
+@media (min-width: 768px) and (max-width: 1023.98px){
+    #navbar {
+        width: 98%;
+        left: 0;
+        right: 0;
+        top: 19%;
+    
+      }
+      #navbar.change {
+        width: 100%;
+      }
+      .navbar-nav{
+          align-items: center;
+          background: #000;
+      }
+      .navbar-brand{
+          padding-left: 3%;
+      }
+      #navbar .navbar-brand img{
+          width: 70px;
+          height: 100px;
+      }
+      .telphone {
+        right: 0%;
+        top: -56px;
+    }
+    .header .social-line li{
+        margin-bottom: 10%;
+    }
+    .header .heading .button{
+        width: 85%;
+    }
+    .header .counter-rang{
+        margin-top: 5%;
+    }
+    .our-client .mySwiper1 img{
+        width: 168px;
+    height: 99px;
+    }
+    .header-head h2{
+        font-size: 40px;
+    }
+    .what-do img{
+        height: 60px;
+    }
+}
+@media (min-width: 1023.98px) and (max-width: 1200px){
+    #navbar {
+        width: 98%;
+        left: 0;
+        right: 0;
+        top: 19%;
+    
+      }
+      #navbar.change {
+        width: 100%;
+      }
+      .navbar-brand{
+        padding-left: 3%;
+    }
+    #navbar .navbar-brand img{
+        width: 70px;
+        height: 100px;
+    }
+    .telphone {
+        right: 9%;
+        top: -56px;
+    }
+    .our-client .mySwiper1 img{
+        width: 150px;
+        height: 90px;
+    }
+    .header-head h2{
+        font-size: 40px;
+    }
+    .what-do img{
+        height: 60px;
+    }
+}

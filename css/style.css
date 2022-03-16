@@ -653,6 +653,7 @@ input::-webkit-inner-spin-button {
 /* start what we do */
 .what-do {
   background-image: url(../image/app-bg.webp);
+  padding: 70px 0;
 }
 .what-do .card {
   background-color: var(--color-text);
@@ -895,7 +896,7 @@ footer {
   align-items: center;
   text-align: center;
   background-color: var(--color-text);
-  padding: 3% 0;
+  padding: 3% 0 0;
 }
 footer .img {
   position: relative;
