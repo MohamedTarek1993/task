@@ -24,8 +24,148 @@
     <!-- ? Favicon -->
 
 <body>
+    <!---------------------- start loader -------------------------------------------->
+  <div id="preloader"></div>
+  <!---------------------- finish loader -------------------------------------------->
+  <!---------------------- start scroll-up -------------------------------------------->
+  <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+  <!---------------------- finish scroll-up -------------------------------------------->
+  <!---------------------- finish wats-------------------------------------------->
+  <a class="float" href="#" target="_blank"> <i class="bi bi-whatsapp my-float"></i> </a>
+  <!---------------------- finish wats -------------------------------------------->
+    <!-- start navbar-->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="navbar-brand">
+            <img src="./image/logo.webp" alt="">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li id="item" class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item" onmouseover="showDrop(id)">
+                    <a id="about" class="nav-link" href="#">what we do
+                        <span><i class="bi bi-caret-down-fill"></i></span>
+                    </a>
+                    <ul class="drop-menu" id="1">
+                        <li>
+                            <a class="head-light" href="#">Social Media Management</a>
+                        </li>
+                        <li>
+                            <a class="head-light" href="#">WhatsApp Business Solutions</a>
+                        </li>
+                        <li>
+                            <a class="head-light" href="#">Mobile App Analytics</a>
+                        </li>
+                        <li>
+                            <a class="head-light" href="#">CRM & Automation</a>
+                        </li>
+                        <li>
+                            <a class="head-light" href="#">Social Media Management</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#awards">solution</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#uses-case">uses case </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-us">about us </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">we are hiring</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">blog </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">contact us </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="telphone">
+            <i class="bi bi-telephone-fill"></i> <a href="tel:+96566605095"> (965) 66605095 </a>
+        </div>
+    </nav>
+    <!-- finish header-->
+
+    <!-- start header-->
+    <section class="header">
+        <div class="over-lay"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 col-md-3 col-12">
+                    <ul class="social-line">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-messenger"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 col-md-9 col-12">
+                    <div class="heading">
+                        <h1>DIGITAL MARKETING THAT DRIVES RESULTS</h1>
+                        <p class="head-light">
+                            SPEAK WITH A RESULTS SPECIALIST TODAY TO GET STARTED WITH SEO, ONLINE MARKETING, DIGITAL
+                            STRATEGY, SOCIAL MEDIA, WEB DESIGN & MORE.
+                        </p>
+                        <div class="button">
+                            <a class="btn prime-button" href="tel:01093140277">
+                                <i class="bi bi-telephone-plus-fill"></i>
+                                0109125475</a>
+                            <a class="second-button btn" href="#">
+                                <i class="bi bi-chat"></i>
+                                Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="counter-rang">
+                        <div class="box">
+                            <div class="counter" data-target="1200"> </div>
+
+                            <h4 class="head-categ">Leads Generated</h4>
+                        </div>
+                        <div class="box">
+                            <div class="counter" data-target="1500"> </div>
+
+                            <h4 class="head-categ">Qualified Calls Generated</h4>
+                        </div>
+                        <div class="box">
+                            <div class="counter" data-target="1500"> </div>
+
+                            <h4 class="head-categ">E-Commerce Transactions </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- finish header -->
+
     <!-- start about us -->
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <div class="header-head">
             <img src="image/fogure.webp" alt="figure">
             <h2>ABOUT US</h2>
@@ -158,7 +298,8 @@
                         <h6>CONTENT MARKETING & MARKETING AUTOMATION</h6>
                         <div class="button">
                             <div class="over-lay"></div>
-                            <a href="#">Learn More</a>
+                            <a href="#"> <span class="color-overlay"></span>
+                                <span class="btn-nxt">Learn More</span>e</a>
                         </div>
                     </div>
 
@@ -169,7 +310,8 @@
                         <h6>CONTENT MARKETING & MARKETING AUTOMATION</h6>
                         <div class="button">
                             <div class="over-lay"></div>
-                            <a href="#">Learn More</a>
+                            <a href="#"> <span class="color-overlay"></span>
+                                <span class="btn-nxt">Learn More</span>e</a>
                         </div>
                     </div>
 
@@ -180,7 +322,8 @@
                         <h6>CONTENT MARKETING & MARKETING AUTOMATION</h6>
                         <div class="button">
                             <div class="over-lay"></div>
-                            <a href="#">Learn More</a>
+                            <a href="#"> <span class="color-overlay"></span>
+                                <span class="btn-nxt">Learn More</span></a>
                         </div>
                     </div>
 
@@ -191,7 +334,8 @@
                         <h6>CONTENT MARKETING & MARKETING AUTOMATION</h6>
                         <div class="button">
                             <div class="over-lay"></div>
-                            <a href="#">Learn More</a>
+                            <a href="#"> <span class="color-overlay"></span>
+                                <span class="btn-nxt">Learn More</span></a>
                         </div>
                     </div>
 
@@ -210,11 +354,105 @@
                     </div>
 
                 </div>
-                
+
             </div>
         </div>
     </section>
     <!-- finish what we do-->
+    <!-- start uses case-->
+    <section class="uses-case" id="uses-case">
+        <div class="header-head ">
+            <img src="image/fogure.webp" alt="figure">
+            <h2>USE CASES</h2>
+        </div>
+        <div class="container">
+            <!-- filter button -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="box-menu">
+                        <ul>
+                            <li class="mixitup-control-active" data-filter="*"> All</li>
+                            <li data-filter=".content"> Content Markting</li>
+                            <li data-filter=".design "> Design & Development</li>
+                            <li data-filter=".degital "> Digital Strategy</li>
+                            <li data-filter=".online"> Online Markting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- filter button -->
+            <!-- filter content -->
+            <div class="row box-list">
+                <div class="col-lg-3 col-md-4 col-6 mix box-item degital ">
+                    <a href="#">
+                        <div>
+                            <img src="image/use-case-desk-1-1.webp" alt="degital">
+                            <div class="over-lay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mix box-item online ">
+                    <a href="#">
+                        <div>
+                            <img src="image/use-case-desk-7-1.webp" alt="online">
+                            <div class="over-lay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mix box-item design ">
+                    <a href="#">
+                        <div>
+                            <img src="image/use-case-desk-13-1.webp" alt="design">
+                            <div class="over-lay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mix box-item content ">
+                    <a href="#">
+                        <div>
+                            <img src="image/HABRA.webp" alt="content">
+                            <div class="over-lay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mix box-item content ">
+                    <a href="#">
+                        <div>
+                            <img src="image/CHESTNUT.webp" alt="content">
+                            <div class="over-lay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mix box-item content ">
+                    <a href="#">
+                        <div>
+                            <img src="image/SAFAT-HOME.webp" alt="content">
+                            <div class="over-lay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mix box-item content ">
+                    <a href="#">
+                        <div>
+                            <img src="image/BURGER-KING-1.webp" alt="content">
+                            <div class="over-lay"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mix box-item content ">
+                    <a href="#">
+                        <div>
+                            <img src="image/use-case-desk-10.webp" alt="content">
+                            <div class="over-lay"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- filter content -->
+
+        </div>
+    </section>
+    <!-- finish uses case-->
 
     <!-- start TESTIMONIALS -->
     <section class="testimonis">
@@ -311,7 +549,7 @@
     </section>
     <!-- finish TESTIMONIALS -->
     <!-- start contact us -->
-    <section class="contact-us">
+    <section class="contact-us" id="contact">
         <h2>We've Driven Over 730,000 E-Commerce Transactions For Our Clients</h2>
         <div class="container">
             <div class="input-group">
@@ -422,6 +660,9 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/main.js"></script>
 <!-- main js -->
+<!-- mixtup -->
+<script src="js/mixtup.js"> </script>
+<!-- mixtup -->
 <!-- swiper -->
 <script src="js/swiper-demos.js"></script>
 <script>
@@ -469,6 +710,38 @@
     });
 </script>
 <!-- swiper -->
+<script>
+    $(document).ready(function () {
+        let mixer = mixitup('.box-list');
+    })
+</script>
+<script>
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        counter.innerText = "0";
+
+        const updateCounter = () => {
+            const target = counter.getAttribute('data-target');
+            const x = +counter.innerText;
+            const increment = target / 200;
+            if (x < target) {
+                counter.innerText = `${Math.ceil(x + increment)}`;
+                setTimeout(updateCounter, 1)
+            } else {
+                counter.innerText = target
+            }
+        }
+        updateCounter();
+    })
+</script>
+<script>
+    function showDrop(id){
+        console.log('ok')
+        let x = id.value
+        console.log(x) 
+        // document.getElementsByid('.drop-menu').style.display = "flex";
+    }
+</script>
 </head>
 
 </html>
